@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+html { 
+    background: url(../images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    font-family: 'Quicksand', sans-serif;
+    max-zoom: 0;
+}
+
+body {
+    filter: none;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.section {
+    margin: 0px;
+    padding: 8%;
+    background-color: rgba(172, 255, 251, 0.189);
+    filter: none;
+    overflow: hidden;
+    object-fit: contain;
+    max-height: 70%;
+    border-bottom: 3px solid white;
+    transition-duration: 0.5s;
+}
+
+.section:hover {
+    background-color: rgba(100, 227, 159, 0.358);
+    transition-duration: 0.5s;
+}
+
+.section .text {
+    background-color: rgba(117, 88, 193, 0.388);
+    padding: 4%;
+    max-width: 30%;
+    min-width: 30%;
+    float: left;
+    display: inline;
+    border: 3px solid white;
+    transition-duration: 0.3s;
+}
+
+.section .text:hover {
+    transition-duration: 0.3s;
+    background-color: rgba(117, 88, 193, 0.5);
+}
+
+.section .text h1 {
+    text-align: center;
+    font-size: 400%;
+    font-weight: 700;
+}
+
+.section .text p {
+    font-size: 200%;
+}
+
+.section img {
+    background-color: rgba(117, 88, 193, 0.388);
+    max-width: 30%;
+    object-fit:contain;
+    padding: 5%;
+    position: relative;
+    float: right;
+    display: inline;
+    border: 3px solid white;
+    margin: 3%;
+    transition-duration: 0.3s;
+}
+
+.section img:hover {
+    transition-duration: 0.3s;
+    background-color: rgba(117, 88, 193, 0.5);
+}
