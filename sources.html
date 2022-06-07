@@ -11,6 +11,30 @@
         <li><a href="https://unsplash.com/s/photos/old-poeple-thumbs-up">Old Poeple photo</a></li>
         <li><a href="https://unsplash.com/photos/B1uMaeL4UJI">background image</a></li>
         <li>Statistics were collected by Kael Johnston and Theo Freeman</li>
+        <li><a href="index.html">Back</a></li>
     </ol>
+    <p id="ip"></p>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        html {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+
+    <script type="application/javascript">
+
+        function getIPAddress()
+        {
+        let req = new XMLHttpRequest()
+        req.open( "GET", "https://api.ipify.org", false );
+        req.send(null);
+        return req.responseText;
+        }
+
+        let para = document.getElementById('ip');
+        para.innerHTML = "IP = " + getIPAddress();
+    </script>
 </body>
 </html>
